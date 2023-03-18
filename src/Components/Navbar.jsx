@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import useScrollUp from "../Utilities/useScrollUp"
 
 import Styles from "../Styles/Component-Styles/Navbar.module.scss";
 import "../Styles/Imported/MenuIcon.css";
@@ -17,6 +18,7 @@ const Navbar = () => {
   const [clicked, setClicked] = useState(false);
 
   let menuRef = useRef();
+  const {scrollUp} = useScrollUp();
 
   useEffect(() => {
     if (window.scrollY >= 120) {
@@ -43,6 +45,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setReveal((prev) => !prev);
     setClicked((prev) => !prev);
+    scrollUp()
   };
 
   return (
@@ -57,17 +60,17 @@ const Navbar = () => {
         <div className={Styles.RightSide}>
           <ul className={Styles.Navlink_Container}>
             <li>
-              <Link to={"/"} className={Styles.Navlink}>
+              <Link to={"/"} className={Styles.Navlink} onClick={scrollUp}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to={"services"} className={Styles.Navlink}>
+              <Link to={"services"} className={Styles.Navlink} onClick={scrollUp}>
                 Services
               </Link>
             </li>
             <li>
-              <Link to={"platforms"} className={Styles.Navlink}>
+              <Link to={"platforms"} className={Styles.Navlink} onClick={scrollUp}>
                 Platforms
               </Link>
             </li>

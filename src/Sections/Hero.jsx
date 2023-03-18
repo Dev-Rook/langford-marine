@@ -1,13 +1,20 @@
 import React from "react";
 import Styles from "../Styles/Sections/Hero.module.scss";
 
-import Video from "../Assets/Videos/Video.mp4"
+import Video from "../Assets/Videos/Video.mp4";
 
 const Hero = () => {
   return (
     <div className={Styles.Hero}>
       <div className={Styles.Background}>
-        <video autoPlay loop muted src={Video} className={Styles.Video}></video>
+        <video
+          autoPlay
+          loop
+          muted
+          type={"video/mp4"}
+          src={Video}
+          className={Styles.Video}
+        ></video>
       </div>
       <div className={Styles.Diffuser}></div>
       <div className={Styles.Content_Container}>
