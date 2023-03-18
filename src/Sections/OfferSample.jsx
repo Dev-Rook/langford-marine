@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import useScrollUp from "../Utilities/useScrollUp";
 import Styles from "../Styles/Sections/OfferSample.module.scss";
 
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -9,6 +10,7 @@ import OfferData from "../Data/Offer.json";
 
 const OfferSample = () => {
   const [data, setData] = useState(OfferData);
+  const {scrollUp} = useScrollUp();
   return (
     <div className={"Section"}>
       <div className={Styles.Content_Container}>
@@ -25,7 +27,7 @@ const OfferSample = () => {
         })}
       </div>
       <div className={Styles.CallToActionBox}>
-        <Link to={"/services"}>
+        <Link to={"/services"} onClick={scrollUp}>
           <button className={Styles.View_Button}>Vew All</button>
         </Link>
         <StartIcon sx={{ color: "black", fontSize: 25 }} />
