@@ -12,6 +12,7 @@ import Footer from "./Components/Footer";
 // Routes Import Start
 import Index from "./Routes/Index";
 import Services from "./Routes/Services";
+import Contact from "./Routes/Contact";
 // Routes Import End
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
         <Routes>
           <Route path={"/"} element={<Index />} />
           <Route path={"services"} element={<Services />} />
+          <Route path={"contact"} element={<Contact />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
