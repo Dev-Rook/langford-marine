@@ -1,0 +1,111 @@
+.Page {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0px;
+  // gap: 50px;
+  overflow: hidden;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.Section {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  padding: 5px;
+  gap: 0px;
+  overflow-x: none;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  height: fit-content;
+  width: 800px;
+}
+
+.Section_One {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  padding: 0px;
+  gap: 0px;
+  overflow-x: none;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  height: 100%;
+  width: 800px;
+}
+
+.Section_Title_Container {
+  display: flex;
+  flex-direction: column;
+  // color: white;
+
+  padding: 0px;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+
+  height: fit-content;
+  width: 100%;
+
+  .Question {
+    font-size: 18px;
+    font-weight: 100;
+    font-style: bold;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .Section_Title {
+    font-size: 50px;
+    font-weight: 100;
+    font-style: bold;
+    text-align: center;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Section, .Section_One {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .Section {
+    height: fit-content;
+  }
+
+  .Section_Title_Container {
+    .Section_Title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .Section_Title_Container {
+    .Section_Title {
+      font-size: 25px;
+    }
+  }
+}

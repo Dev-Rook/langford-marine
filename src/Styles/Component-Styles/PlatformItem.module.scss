@@ -1,0 +1,49 @@
+.Platform_Container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  gap: 20px;
+
+  height: 100%;
+  width: 100%;
+
+  margin-top: 100px;
+
+  .Video_Preview_Box {
+    display: flex;
+
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 300px;
+    width: 400px;
+
+    border: 1px solid black;
+  }
+  .Descrption_Box {
+    .Title {
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Platform_Container {
+    flex-direction: column;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Platform_Container {
+    width: 100%;
+
+    .Video_Preview_Box {
+      width: 100%;
+    }
+  }
+}

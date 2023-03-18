@@ -1,34 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React, { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Styles from "./App.scss";
 
-function App() {
-  const [count, setCount] = useState(0)
+import NavigationIcon from "@mui/icons-material/Navigation";
+
+// Component Imports Start
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+// Component Imports End
+
+// Routes Import Start
+import Index from "./Routes/Index";
+import Services from "./Routes/Services";
+// Routes Import End
+
+const App = () => {
+  const [backToTop, setBackToTop] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setBackToTop(true);
+      } else {
+        setBackToTop(false);
+      }
+    });
+  }, []);
+
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className={Styles.App}>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path={"/"} element={<Index />} />
+          <Route path={"services"} element={<Services />} />
+        </Routes>
+        {/* <Footer /> */}
+      </BrowserRouter>
+      {/* <NavigationIcon
+        onClick={scrollUp}
+        sx={{ fontSize: 30, color: "black" }}
+        className={`${Styles.Back_To_Top_Icon} ${
+          backToTop ? Styles.Show_Back_To_Top : ""
+        }`}
+      /> */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

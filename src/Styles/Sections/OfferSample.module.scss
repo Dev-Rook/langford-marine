@@ -1,0 +1,116 @@
+.Content_Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+
+  justify-content: center;
+  align-items: center;
+
+  height: fit-content;
+  width: 100%;
+
+  .Card {
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    height: 250px;
+    width: 100%;
+
+    margin: auto;
+
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .Background {
+      display: flex;
+      position: absolute;
+      overflow: hidden;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+
+      .Image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+      }
+    }
+
+    .Diffuser {
+      display: flex;
+      position: absolute;
+      z-index: 2;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .Title {
+      color: white;
+      font-size: 14px;
+      font-weight: 450;
+
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      transition: 0.3s;
+      z-index: 3;
+
+      padding: 2.5px 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .Card:is(:hover, :focus) {
+    .Background {
+      .Image {
+        transform: scale(1.1);
+      }
+    }
+
+    .Title {
+      font-size: 18px;
+    }
+  }
+}
+
+.CallToActionBox {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-start;
+
+  gap: 10px;
+  padding: 0px;
+  margin-top: 20px;
+
+  height: fit-content;
+  width: fit-content;
+
+  .View_Button {
+    padding: 5px 20px;
+    transition: .3s;
+    cursor: pointer;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #0066CC;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+  }
+
+  .View_Button:is(:hover, :focus) {
+    transform: scale(.9);
+  }
+}

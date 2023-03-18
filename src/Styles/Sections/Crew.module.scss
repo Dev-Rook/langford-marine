@@ -1,0 +1,99 @@
+.Title {
+  font-size: 30px;
+  font-weight: 400;
+
+  display: flex;
+  align-self: flex-start;
+
+  margin-left: 5px;
+}
+
+.Content_Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+
+  justify-content: center;
+  align-items: center;
+
+  height: fit-content;
+  width: 100%;
+
+  .Card {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+    gap: 0px;
+    margin: auto;
+
+    height: fit-content;
+    width: 100%;
+
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .Image_Container {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      overflow: hidden;
+
+      height: 200px;
+      width: 100%;
+
+      .Image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .Description_Box {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-around;
+      align-items: flex-start;
+
+      padding: 5px;
+      gap: 0px;
+      overflow: hidden;
+
+      height: 40%;
+      width: 100%;
+
+      span {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 10px;
+
+        height: fit-content;
+        width: fit-content;
+
+        .Name {
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        .Personel_Title {
+          font-size: 16px;
+          font-weight: 300;
+        }
+
+        .Bio {
+            font-size: 18px;
+        }
+      }
+    }
+  }
+}
