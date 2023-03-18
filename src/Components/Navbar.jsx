@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import useScrollUp from "../Utilities/useScrollUp"
+import useScrollUp from "../Utilities/useScrollUp";
 
 import Styles from "../Styles/Component-Styles/Navbar.module.scss";
 import "../Styles/Imported/MenuIcon.css";
@@ -18,7 +18,7 @@ const Navbar = () => {
   const [clicked, setClicked] = useState(false);
 
   let menuRef = useRef();
-  const {scrollUp} = useScrollUp();
+  const { scrollUp } = useScrollUp();
 
   useEffect(() => {
     if (window.scrollY >= 120) {
@@ -45,7 +45,11 @@ const Navbar = () => {
   const toggleMenu = () => {
     setReveal((prev) => !prev);
     setClicked((prev) => !prev);
-    scrollUp()
+  };
+
+  const menuHandler = () => {
+    toggleMenu();
+    scrollUp();
   };
 
   return (
@@ -65,12 +69,20 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to={"services"} className={Styles.Navlink} onClick={scrollUp}>
+              <Link
+                to={"services"}
+                className={Styles.Navlink}
+                onClick={scrollUp}
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link to={"platforms"} className={Styles.Navlink} onClick={scrollUp}>
+              <Link
+                to={"platforms"}
+                className={Styles.Navlink}
+                onClick={scrollUp}
+              >
                 Platforms
               </Link>
             </li>
@@ -91,7 +103,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className={Styles.Menu_NavLink}
-                  onClick={toggleMenu}
+                  onClick={menuHandler}
                   to={"/"}
                 >
                   Home
@@ -100,7 +112,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className={Styles.Menu_NavLink}
-                  onClick={toggleMenu}
+                  onClick={menuHandler}
                   to={"services"}
                 >
                   Services
@@ -109,7 +121,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className={Styles.Menu_NavLink}
-                  onClick={toggleMenu}
+                  onClick={menuHandler}
                   to={"platforms"}
                 >
                   Platforms
@@ -118,7 +130,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className={Styles.Menu_NavLink}
-                  onClick={toggleMenu}
+                  onClick={menuHandler}
                   to={"contact"}
                 >
                   Contact
