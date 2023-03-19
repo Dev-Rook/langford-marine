@@ -6,7 +6,6 @@ const Introduction = () => {
   return (
     <div className={"Section"}>
       <div className={Styles.Content_Container}>
-        {/* <h1 className={Styles.Title}>D&E Marine</h1> */}
         <p className={Styles.Bio}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, atque
           cumque recusandae doloremque voluptas omnis eos nostrum fuga ea

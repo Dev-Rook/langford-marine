@@ -12,28 +12,12 @@ import Footer from "./Components/Footer";
 // Routes Import Start
 import Index from "./Routes/Index";
 import Services from "./Routes/Services";
+import HowWeDoIt from "./Routes/HowWeDoIt";
 import Contact from "./Routes/Contact";
 // Routes Import End
 
 const App = () => {
   const [backToTop, setBackToTop] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        setBackToTop(true);
-      } else {
-        setBackToTop(false);
-      }
-    });
-  }, []);
-
-  const scrollUp = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <div className={Styles.App}>
@@ -42,6 +26,7 @@ const App = () => {
         <Routes>
           <Route path={"/"} element={<Index />} />
           <Route path={"services"} element={<Services />} />
+          <Route path={"how we do it"} element={<HowWeDoIt />} />
           <Route path={"contact"} element={<Contact />} />
         </Routes>
         {/* <Footer /> */}
