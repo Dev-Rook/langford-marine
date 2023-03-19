@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/Global.scss";
 import Styles from "../Styles/Sections/Timeline.module.scss";
 
@@ -11,88 +11,49 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 // Material UI Timeline Imports End
 
+import LaunchIcon from "@mui/icons-material/Launch";
+
+import ProjectData from "../Data/Projects.json";
+
 const ProjectsList = () => {
+  const [data, setData] = useState(ProjectData);
   return (
     <div className={"Section_One"}>
       <p className={Styles.Title}>Projects</p>
-      <Timeline
-        className={`${Styles.Timeline}`}
-        sx={{
-          [`& .${timelineItemClasses.root}:before`]: {
-            flex: 0,
-            padding: 0,
-          },
-        }}
-      >
-        <TimelineItem className={Styles.Timeline_Item}>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent className={Styles.Time_Card}>
-            <span>
-              <p className={Styles.Year}>1990</p>
-              <p className={Styles.Title}>Title</p>
-            </span>
-            <p className={Styles.Description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              obcaecati rerum enim suscipit eaque dolorum quidem impedit
-              repudiandae architecto facilis!
-            </p>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem className={Styles.Timeline_Item}>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent className={Styles.Time_Card}>
-            <span>
-              <p className={Styles.Year}>1990</p>
-              <p className={Styles.Title}>Title</p>
-            </span>
-            <p className={Styles.Description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              obcaecati rerum enim suscipit eaque dolorum quidem impedit
-              repudiandae architecto facilis!
-            </p>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem className={Styles.Timeline_Item}>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent className={Styles.Time_Card}>
-            <span>
-              <p className={Styles.Year}>1990</p>
-              <p className={Styles.Title}>Title</p>
-            </span>
-            <p className={Styles.Description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              obcaecati rerum enim suscipit eaque dolorum quidem impedit
-              repudiandae architecto facilis!
-            </p>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem className={Styles.Timeline_Item}>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent className={Styles.Time_Card}>
-            <span>
-              <p className={Styles.Year}>1990</p>
-              <p className={Styles.Title}>Title</p>
-            </span>
-            <p className={Styles.Description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              obcaecati rerum enim suscipit eaque dolorum quidem impedit
-              repudiandae architecto facilis!
-            </p>
-          </TimelineContent>
-        </TimelineItem>
-      </Timeline>
+      <>
+        {data?.slice(0, 3).map((value) => {
+          return (
+            <Timeline
+              className={`${Styles.Timeline}`}
+              sx={{
+                [`& .${timelineItemClasses.root}:before`]: {
+                  flex: 0,
+                  padding: 0,
+                },
+              }}
+              key={value.id}
+            >
+              <TimelineItem className={Styles.Timeline_Item}>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent className={Styles.Time_Card}>
+                  <span>
+                    <p className={Styles.Year}>{value.year}</p>
+                    <p className={Styles.Title}>{value.title}</p>
+                    <a href={value.link} target={"_blank"} re={"noreferrer"}>
+                      <LaunchIcon sx={{ color: "red" }} />
+                    </a>
+                  </span>
+                  <p className={Styles.Description}>{value.description}</p>
+                  <p className={Styles.Type}>{value.type}</p>
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
+          );
+        })}
+      </>
     </div>
   );
 };

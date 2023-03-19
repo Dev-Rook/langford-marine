@@ -60,6 +60,18 @@
         font-weight: 200;
         text-align: left;
       }
+
+      .Type {
+        display: flex;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+
+        padding: 2px 10px;
+
+        background-color: #325A76;
+        border-radius: 5px;
+      }
     }
   }
 }
