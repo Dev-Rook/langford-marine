@@ -25,7 +25,7 @@
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
+    
     .Background {
       display: flex;
       position: absolute;
@@ -33,7 +33,7 @@
       z-index: 1;
       height: 100%;
       width: 100%;
-
+      
       .Image {
         height: 100%;
         width: 100%;
@@ -41,7 +41,7 @@
         transition: 0.3s ease-in-out;
       }
     }
-
+    
     .Diffuser {
       display: flex;
       position: absolute;
@@ -50,20 +50,22 @@
       width: 100%;
       background-color: rgba(0, 0, 0, 0.5);
     }
-
+    
     .Title {
       color: white;
       font-size: 14px;
       font-weight: 450;
-
+      
       position: absolute;
       left: 10px;
       bottom: 10px;
       transition: 0.3s;
       z-index: 3;
-
+      
       padding: 2.5px 10px;
       background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
   }
 

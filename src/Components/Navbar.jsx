@@ -7,6 +7,7 @@ import "../Styles/Imported/MenuIcon.css";
 
 import Dropdown from "react-bootstrap/Dropdown";
 import MenuIcon from "@mui/icons-material/Menu";
+import AnchorIcon from "@mui/icons-material/Anchor";
 
 import YouTubeIcon from "../Assets/Icons/YouTube.png";
 import InstagramIcon from "../Assets/Icons/Instagram.png";
@@ -58,7 +59,8 @@ const Navbar = () => {
     >
       <nav className={Styles.Navbar}>
         <div className={Styles.LeftSide}>
-          <p className={Styles.Slogan}>D&E</p>
+          {/* <p className={Styles.Slogan}>D&E</p> */}
+          <AnchorIcon sx={{color: "white", fontSize: 30}} />
         </div>
 
         <div className={Styles.RightSide}>
