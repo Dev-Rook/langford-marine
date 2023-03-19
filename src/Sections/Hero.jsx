@@ -8,8 +8,7 @@ const Hero = () => {
     <div className={Styles.Hero}>
       <div className={Styles.Background}>
         <video
-          controls={false}
-          autoPlay
+          autoPlay={"autoPlay"}
           loop
           muted
           type={"video/mp4"}
