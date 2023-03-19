@@ -63,22 +63,21 @@
       align-items: flex-start;
 
       padding: 5px;
-      gap: 0px;
+      gap: 10px;
       overflow: hidden;
 
       height: 40%;
       width: 100%;
 
       color: white;
-      background-color: #325A76;
+      background-color: #325a76;
 
       span {
         display: flex;
+        flex-direction: column;
 
         justify-content: space-between;
-        align-items: center;
-
-        gap: 10px;
+        align-items: flex-start;
 
         height: fit-content;
         width: fit-content;
@@ -89,13 +88,12 @@
         }
 
         .Personel_Title {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
         }
-
-        .Bio {
-            font-size: 18px;
-        }
+      }
+      .Bio {
+        font-size: 14px;
       }
     }
   }
