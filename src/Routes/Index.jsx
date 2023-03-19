@@ -1,4 +1,5 @@
 import React from "react";
+import {TabTitle} from "../Utilities/TabTitle"
 import "../Styles/Global.scss";
 
 // Section Imports Start
@@ -13,6 +14,7 @@ import ContactForm from "../Components/ContactForm";
 
 
 const Index = () => {
+  TabTitle("D&E | Home")
   return (
     <div className={"Page"}>
       <Hero />
