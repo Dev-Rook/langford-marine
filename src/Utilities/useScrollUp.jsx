@@ -20,7 +20,7 @@ const useScrollUp = () => {
     });
   };
 
-  return { scrollUp };
+  return { scrollUp, backToTop };
 };
 
 export default useScrollUp;
