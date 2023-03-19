@@ -5,13 +5,8 @@ import useScrollUp from "../Utilities/useScrollUp";
 import Styles from "../Styles/Component-Styles/Navbar.module.scss";
 import "../Styles/Imported/MenuIcon.css";
 
-import Dropdown from "react-bootstrap/Dropdown";
 import MenuIcon from "@mui/icons-material/Menu";
 import AnchorIcon from "@mui/icons-material/Anchor";
-
-import YouTubeIcon from "../Assets/Icons/YouTube.png";
-import InstagramIcon from "../Assets/Icons/Instagram.png";
-import TwitterIcon from "../Assets/Icons/Twitter.png";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
