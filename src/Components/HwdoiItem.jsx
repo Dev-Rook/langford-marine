@@ -12,8 +12,8 @@ const HwdoiItem = () => {
       <div className={Styles.Content_Container}>
         {data?.map((value) => {
           return (
-            <a href={value.link} target={"_blank"} rel={"noreferrer"}>
-              <div className={Styles.Video_Card} key={value.id}>
+            <a href={value.link} target={"_blank"} rel={"noreferrer"} key={value.id}>
+              <div className={Styles.Video_Card}>
                 <div className={Styles.Image_Container}>
                   <img src={value.image} alt="" className={Styles.Image} />
                 </div>

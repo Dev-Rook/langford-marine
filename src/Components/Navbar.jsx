@@ -124,6 +124,15 @@ const Navbar = () => {
                 <Link
                   className={Styles.Menu_NavLink}
                   onClick={menuHandler}
+                  to={"how we do it"}
+                >
+                  How We Do It
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className={Styles.Menu_NavLink}
+                  onClick={menuHandler}
                   to={"platforms"}
                 >
                   Platforms
