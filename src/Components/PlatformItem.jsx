@@ -12,7 +12,7 @@ const PlatformItem = () => {
       <div className={Styles.Content_Container}>
         {data?.map((value) => {
           return (
-            <div className={Styles.Video_Card}>
+            <div className={Styles.Video_Card} key={value.id}>
               <div className={Styles.Image_Container}>
                 <a
                   id="play-video"

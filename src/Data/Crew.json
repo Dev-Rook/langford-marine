@@ -1,24 +1,28 @@
 [
     {
         "id": 1,
+        "image": "https://github.com/Dev-Rook/langford-marine/blob/main/src/Assets/Images/Headshots/cap%20headshot.jpg?raw=true",
         "name": "Captain Bryan Langford",
         "title": "Owner and Managing Director",
         "bio": "Born and educated in Kingston Jamaica, 30+ years experience as a Merchant Marine Captain & experience in maritime shipping operations, as well as marine engineering, demolition, lifting, surveying and dredging operations."
     },
     {
         "id": 2,
+        "image": "https://github.com/Dev-Rook/langford-marine/blob/main/src/Assets/Images/Headshots/kelly%20headshot.jpg?raw=true",
         "name": "Peter Wilson-Kelly",
         "title": "Resources Impact Mitigation Specialist",
         "bio": "A Commercial Diver, Marine Ecologist, Coastal Zone Management and Remote Sensing specialist with over 20 years working experience in both fields. A former employee of the National Environment and Planning Agency and an ex Navy diver."
     },
     {
         "id": 3,
+        "image": "",
         "name": "Deborah Kodi Davison",
         "title": "Title Of Person",
         "bio": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam iste mollitia quaerat sint dicta nihil delectus quisquam expedita ad possimus?"
     },
     {
         "id": 4,
+        "image": "",
         "name": "John Doe",
         "title": "Title Of Person",
         "bio": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam iste mollitia quaerat sint dicta nihil delectus quisquam expedita ad possimus?"

@@ -15,7 +15,7 @@ const Crew = () => {
           return (
             <div className={Styles.Card} key={value.id}>
               <div className={Styles.Image_Container}>
-                <img src={value.Image} alt="" className={Styles.Image} />
+                <img src={value.image} alt="" className={Styles.Image} />
               </div>
               <div className={Styles.Description_Box}>
                 <span>
