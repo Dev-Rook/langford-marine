@@ -53,10 +53,13 @@ const Navbar = () => {
       className={`${Styles.Navbar_Wrapper} ${scroll ? Styles.NavScroll : ""}`}
     >
       <nav className={Styles.Navbar}>
-        <div className={Styles.LeftSide}>
-          {/* <p className={Styles.Slogan}>D&E</p> */}
-          <AnchorIcon sx={{color: "white", fontSize: 30}} />
-        </div>
+        <Link to={"/"}>
+          <div className={Styles.LeftSide}>
+            {/* <p className={Styles.Slogan}>D&E</p> */}
+
+            <AnchorIcon sx={{ color: "white", fontSize: 30 }} />
+          </div>
+        </Link>
 
         <div className={Styles.RightSide}>
           <ul className={Styles.Navlink_Container}>
