@@ -14,6 +14,7 @@ import Footer from "./Components/Footer";
 // Routes Import Start
 const Index = lazy(() => import("./Routes/Index"))
 const Services = lazy(() => import("./Routes/Services"))
+const Platforms = lazy(() => import("./Routes/Platforms"))
 const HowWeDoIt = lazy(() => import("./Routes/HowWeDoIt"))
 const Contact = lazy(() => import("./Routes/Contact"))
 const Error = lazy(() => import("./Routes/Error"))
@@ -30,6 +31,7 @@ const App = () => {
           <Routes>
             <Route path={"/"} element={<Index />} />
             <Route path={"services"} element={<Services />} />
+            <Route path={"platforms"} element={<Platforms />} />
             <Route path={"how we do it"} element={<HowWeDoIt />} />
             <Route path={"contact"} element={<Contact />} />
             <Route path={"*"} element={<Error />} />

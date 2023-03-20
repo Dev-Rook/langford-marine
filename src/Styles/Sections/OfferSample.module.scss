@@ -1,3 +1,12 @@
+.Title {
+  font-size: 30px;
+  font-weight: 400;
+
+  display: flex;
+  align-self: flex-start;
+
+  // margin-left: 5px;
+}
 .Content_Container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -25,7 +34,7 @@
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
+
     .Background {
       display: flex;
       position: absolute;
@@ -33,7 +42,7 @@
       z-index: 1;
       height: 100%;
       width: 100%;
-      
+
       .Image {
         height: 100%;
         width: 100%;
@@ -41,7 +50,7 @@
         transition: 0.3s ease-in-out;
       }
     }
-    
+
     .Diffuser {
       display: flex;
       position: absolute;
@@ -50,19 +59,19 @@
       width: 100%;
       background-color: rgba(0, 0, 0, 0.5);
     }
-    
+
     .Title {
       color: white;
       font-size: 13px;
       font-weight: 450;
-      
+
       position: absolute;
       left: 5px;
       bottom: 10px;
 
       transition: 0.3s;
       z-index: 3;
-      
+
       padding: 2px 4px;
       background-color: rgba(0, 0, 0, 0.5);
       border-radius: 5px;
@@ -95,11 +104,11 @@
 
   .View_Button {
     padding: 5px 20px;
-    transition: .3s;
+    transition: 0.3s;
     cursor: pointer;
 
     background-color: rgba(0, 0, 0, 0.5);
-    background-color: #0066CC;
+    background-color: #0066cc;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -110,6 +119,6 @@
   }
 
   .View_Button:is(:hover, :focus) {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
 }

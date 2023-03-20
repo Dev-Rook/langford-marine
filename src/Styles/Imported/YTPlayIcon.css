@@ -2,8 +2,10 @@
 
 .video-play-button {
     position: absolute;
+    z-index: 4;
     z-index: 10;
     top: 50%;
+    bottom: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     box-sizing: content-box;
@@ -23,8 +25,8 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     background: #ba1f24;
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
@@ -38,8 +40,8 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     background: rgb(15, 38, 61);
     border-radius: 50%;
     transition: all 200ms;

@@ -1,35 +1,36 @@
-import React from "react";
-import Styles from "../../Styles/Component-Styles/PlatformItem.module.scss";
+import React, { useState } from "react";
+import "../Styles/Global.scss";
+import "../Styles/Imported/YTPlayIcon.css";
+import Styles from "../Styles/Component-Styles/HwdoiItem.module.scss";
 
-import "../../Styles/Global.scss";
-
-
+import PlatformData from "../Data/Platform.json";
 
 const PlatformItem = () => {
+  const [data, setData] = useState(PlatformData);
   return (
     <div className={"Section"}>
-      <div className={Styles.Platform_Container}>
-        <div className={Styles.Video_Preview_Box}>
-          <video src={""} className={Styles.Preview}></video>
-          <a
-          id="play-video"
-          className="video-play-button"
-          href={`https://youtube.com`}
-          target={"_blank"}
-          rel={"noreferrer"}
-        >
-          <span></span>
-        </a>
-        </div>
+      <div className={Styles.Content_Container}>
+        {data?.map((value) => {
+          return (
+            <div className={Styles.Video_Card}>
+              <div className={Styles.Image_Container}>
+                <a
+                  id="play-video"
+                  className="video-play-button"
+                  href={value.link}
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                >
+                  <span></span>
+                </a>
+                <img src={value.image} alt="" className={Styles.Image} />
+              </div>
 
-        <div className={Styles.Descrption_Box}>
-          <p className={Styles.Title}>This is the title</p>
-          <p className={Styles.Text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            vero omnis harum deserunt corrupti neque tempore inventore optio,
-            sit quisquam?
-          </p>
-        </div>
+              <p className={Styles.Video_Title}>{value.title}</p>
+              <p className={Styles.Description}>{value.description}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

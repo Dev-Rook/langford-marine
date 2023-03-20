@@ -13,6 +13,7 @@ const OfferSample = () => {
   const {scrollUp} = useScrollUp();
   return (
     <div className={"Section"}>
+      {/* <p className={Styles.Title}>What We Do</p> */}
       <div className={Styles.Content_Container}>
         {data?.slice(0, 3).map((value) => {
           return (

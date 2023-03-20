@@ -1,8 +1,16 @@
 [
     {
         "id": 1,
-        "Preview": "Image",
-        "Title": "Title",
-        "Description": "Lorem ipsum dolor. Officiis vero omnis harum deserunt corrupti inventore optio, sit quisquam?"
+        "preview": "Image",
+        "title": "Kraken",
+        "link": "https://www.youtube.com",
+        "description": "Lorem ipsum dolor. Officiis vero omnis harum deserunt corrupti inventore optio, sit quisquam?"
+    },
+    {
+        "id": 2,
+        "preview": "Image",
+        "title": "Squid",
+        "link": "https://www.youtube.com",
+        "description": "Lorem ipsum dolor. Officiis vero omnis harum deserunt corrupti inventore optio, sit quisquam?"
     }
 ]

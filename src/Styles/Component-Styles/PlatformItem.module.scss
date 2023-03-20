@@ -1,16 +1,15 @@
 .Platform_Container {
   display: flex;
+  flex-direction: column;
 
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   padding: 5px;
   gap: 20px;
 
   height: 100%;
   width: 100%;
-
-  margin-top: 100px;
 
   .Video_Preview_Box {
     display: flex;
@@ -21,7 +20,7 @@
     align-items: center;
 
     height: 300px;
-    width: 400px;
+    width: 100%;
 
     border: 1px solid black;
   }
