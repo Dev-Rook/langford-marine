@@ -26,7 +26,7 @@ const App = () => {
     <div className={Styles.App}>
       <BrowserRouter>
         <Navbar />
-        <Suspence Fallback={<Fallback />}>
+        <Suspense Fallback={<Fallback />}>
           <Routes>
             <Route path={"/"} element={<Index />} />
             <Route path={"services"} element={<Services />} />
@@ -34,7 +34,7 @@ const App = () => {
             <Route path={"contact"} element={<Contact />} />
             <Route path={"*"} element={<Error />} />
           </Routes>
-        </Suspence>
+        </Suspense>
         <Footer />
       </BrowserRouter>
       <NavigationIcon
