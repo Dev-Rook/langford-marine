@@ -1,13 +1,3 @@
-.Title {
-  font-size: 30px;
-  font-weight: 400;
-
-  display: flex;
-  align-self: flex-start;
-
-  // margin-left: 5px;
-}
-
 .Content_Container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

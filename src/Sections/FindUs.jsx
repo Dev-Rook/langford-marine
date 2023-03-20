@@ -5,7 +5,7 @@ import Styles from "../Styles/Sections/FindUs.module.scss";
 const FindUs = () => {
   return (
     <div className={"Section"}>
-      <p className={Styles.Title}>Find Us</p>
+      <p className={"Title"}>Find Us</p>
       <div className={Styles.Map_Container}>
         <iframe
           width="100%"

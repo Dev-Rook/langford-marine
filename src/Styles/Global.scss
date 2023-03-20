@@ -31,6 +31,16 @@
 
   height: fit-content;
   width: 800px;
+
+  .Title {
+    font-size: 30px;
+    font-weight: 400;
+
+    display: flex;
+    align-self: flex-start;
+
+    margin-bottom: 8px;
+  }
 }
 
 .Section_One {
@@ -85,7 +95,8 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .Section, .Section_One {
+  .Section,
+  .Section_One {
     width: 100%;
   }
 }

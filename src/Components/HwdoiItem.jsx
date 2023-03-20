@@ -8,7 +8,7 @@ const HwdoiItem = () => {
   const [data, setData] = useState(Hwdoi);
   return (
     <div className={"Section"}>
-      <p className={Styles.Title}>How We Do It</p>
+      <p className={"Title"}>How We Do It</p>
       <div className={Styles.Content_Container}>
         {data?.map((value) => {
           return (

@@ -18,8 +18,8 @@ import ProjectData from "../Data/Projects.json";
 const ProjectsList = () => {
   const [data, setData] = useState(ProjectData);
   return (
-    <div className={"Section_One"}>
-      <p className={Styles.Title}>Projects</p>
+    <div className={"Section"}>
+      <p className={"Title"}>Projects</p>
       <>
         {data?.slice(0, 3).map((value) => {
           return (

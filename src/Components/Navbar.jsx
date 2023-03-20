@@ -53,7 +53,7 @@ const Navbar = () => {
       className={`${Styles.Navbar_Wrapper} ${scroll ? Styles.NavScroll : ""}`}
     >
       <nav className={Styles.Navbar}>
-        <Link to={"/"}>
+        <Link to={"/"} onClick={scrollUp}>
           <div className={Styles.LeftSide}>
             {/* <p className={Styles.Slogan}>D&E</p> */}
 

@@ -9,7 +9,7 @@ const Crew = () => {
 
   return (
     <div className={"Section"}>
-      <p className={Styles.Title}>Crew</p>
+      <p className={"Title"}>Crew</p>
       <div className={Styles.Content_Container}>
         {data?.map((value) => {
           return (

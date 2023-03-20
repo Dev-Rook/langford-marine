@@ -9,7 +9,7 @@ const ContactForm = () => {
 
   return (
     <div className={"Section"}>
-      <p className={Styles.Title}>Contact</p>
+      <p className={"Title"}>Contact</p>
       <form action="POST" className={Styles.Contact_Form}>
         <input type="text" name="Name" placeholder="Name" className={Styles.Input} required />
         <input type="email" name="Email" placeholder="Email" className={Styles.Input} required />
