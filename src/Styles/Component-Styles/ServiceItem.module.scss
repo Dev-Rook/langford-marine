@@ -27,13 +27,20 @@
 
       justify-content: center;
       align-items: center;
+      overflow: hidden;
 
-      height: 350px;
+      height: 450px;
       width: 100%;
 
       border: 2px solid black;
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+      .Image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
 
     .Information_Container {
