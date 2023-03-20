@@ -15,7 +15,7 @@ const ErrorLabel = () => {
         But if you don't change your direction, and if you keep looking, you may end up where you are heading.
         </p>
         <div className={Styles.CallToActionBox}>
-          <Link to={"/services"}>
+          <Link to={"/"}>
             <button className={Styles.View_Button}>Home</button>
           </Link>
           <StartIcon sx={{ color: "black", fontSize: 25 }} />
