@@ -7,9 +7,9 @@ import Box from "@mui/material/Box";
 
 const Fallback = () => {
   return (
-    <div className={"Page"}>
+    <div className={Styles.Page}>
       <Box className={Styles.Box} sx={{ display: "flex" }}>
-        <CircularProgress />
+        <CircularProgress sx={{color: "black", fontSize: 30}} />
       </Box>
     </div>
   );
