@@ -1,11 +1,10 @@
 .Content_Container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 
   justify-content: center;
   align-items: center;
-
-  gap: 30px;
 
   height: fit-content;
   width: 100%;
@@ -29,8 +28,8 @@
       align-items: center;
       overflow: hidden;
 
-      height: 450px;
-      width: 100%;
+      height: fit-content;
+      width: fit-content;
 
       border: 2px solid black;
       border-radius: 5px;
@@ -39,7 +38,7 @@
       .Image {
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
     }
 
