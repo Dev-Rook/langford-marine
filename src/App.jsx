@@ -15,6 +15,7 @@ import Footer from "./Components/Footer";
 import Index from "./Routes/Index";
 import Services from "./Routes/Services";
 import Platforms from "./Routes/Platforms";
+import Facilities from "./Routes/Facilities";
 import HowWeDoIt from "./Routes/HowWeDoIt";
 import Contact from "./Routes/Contact";
 import Error from "./Routes/Error";
@@ -31,6 +32,7 @@ const App = () => {
             <Route path={"/"} element={<Index />} />
             <Route path={"services"} element={<Services />} />
             <Route path={"platforms"} element={<Platforms />} />
+            <Route path={"facilities"} element={<Facilities />} />
             <Route path={"how we do it"} element={<HowWeDoIt />} />
             <Route path={"contact"} element={<Contact />} />
             <Route path={"*"} element={<Error />} />

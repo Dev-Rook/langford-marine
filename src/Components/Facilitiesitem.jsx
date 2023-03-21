@@ -3,17 +3,16 @@ import "../Styles/Global.scss";
 import "../Styles/Imported/YTPlayIcon.css";
 import Styles from "../Styles/Component-Styles/HwdoiItem.module.scss";
 
-import Hwdoi from "../Data/Hwdi.json";
+import FacilitiesData from "../Data/Facilities.json";
 
-const HwdoiItem = () => {
-  const [data, setData] = useState(Hwdoi);
+const Facilitiesitem = () => {
+  const [data, setData] = useState(FacilitiesData);
   return (
     <div className={"Section"}>
-      <p className={"Title"}>How We Do It</p>
       <div className={Styles.Content_Container}>
         {data?.map((value) => {
           return (
-            <div className={Styles.Video_Card}>
+            <div className={Styles.Video_Card} key={value.id}>
               <div className={Styles.Image_Container}>
                 <a
                   id="play-video"
@@ -37,4 +36,4 @@ const HwdoiItem = () => {
   );
 };
 
-export default HwdoiItem;
+export default Facilitiesitem;
