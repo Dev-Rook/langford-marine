@@ -12,12 +12,12 @@ import Footer from "./Components/Footer";
 // Component Imports End
 
 // Routes Import Start
-const Index = lazy(() => import("./Routes/Index"))
-const Services = lazy(() => import("./Routes/Services"))
-const Platforms = lazy(() => import("./Routes/Platforms"))
-const HowWeDoIt = lazy(() => import("./Routes/HowWeDoIt"))
-const Contact = lazy(() => import("./Routes/Contact"))
-const Error = lazy(() => import("./Routes/Error"))
+import Index from "./Routes/Index";
+import Services from "./Routes/Services";
+import Platforms from "./Routes/Platforms";
+import HowWeDoIt from "./Routes/HowWeDoIt";
+import Contact from "./Routes/Contact";
+import Error from "./Routes/Error";
 // Routes Import End
 
 const App = () => {
@@ -27,7 +27,6 @@ const App = () => {
     <div className={Styles.App}>
       <BrowserRouter>
         <Navbar />
-        <Suspense Fallback={<Fallback />}>
           <Routes>
             <Route path={"/"} element={<Index />} />
             <Route path={"services"} element={<Services />} />
@@ -36,7 +35,6 @@ const App = () => {
             <Route path={"contact"} element={<Contact />} />
             <Route path={"*"} element={<Error />} />
           </Routes>
-        </Suspense>
         <Footer />
       </BrowserRouter>
       <NavigationIcon

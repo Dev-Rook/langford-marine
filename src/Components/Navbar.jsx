@@ -70,7 +70,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to={"services"}
+                to={"/services"}
                 className={Styles.Navlink}
                 onClick={scrollUp}
               >
@@ -79,11 +79,20 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to={"platforms"}
+                to={"/platforms"}
                 className={Styles.Navlink}
                 onClick={scrollUp}
               >
                 Platforms
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"/contact"}
+                className={Styles.Navlink}
+                onClick={scrollUp}
+              >
+                Contact
               </Link>
             </li>
           </ul>
@@ -113,7 +122,7 @@ const Navbar = () => {
                 <Link
                   className={Styles.Menu_NavLink}
                   onClick={menuHandler}
-                  to={"services"}
+                  to={"/services"}
                 >
                   Services
                 </Link>
@@ -122,7 +131,7 @@ const Navbar = () => {
                 <Link
                   className={Styles.Menu_NavLink}
                   onClick={menuHandler}
-                  to={"how we do it"}
+                  to={"/how we do it"}
                 >
                   How We Do It
                 </Link>
@@ -140,7 +149,7 @@ const Navbar = () => {
                 <Link
                   className={Styles.Menu_NavLink}
                   onClick={menuHandler}
-                  to={"contact"}
+                  to={"/contact"}
                 >
                   Contact
                 </Link>
