@@ -8,6 +8,7 @@ import Introduction from "../Sections/Introduction";
 import OfferSample from "../Sections/OfferSample";
 import ProjectsList from "../Sections/ProjectsList";
 import Crew from "../Sections/Crew";
+import Facilitiesitem from "../Components/Facilitiesitem";
 import FindUs from "../Sections/FindUs";
 import ContactForm from "../Components/ContactForm";
 // Section Imports End
@@ -21,6 +22,7 @@ const Index = () => {
       <Introduction />
       <OfferSample />
       <ProjectsList />
+      <Facilitiesitem />
       <Crew />
       <FindUs />
       <ContactForm />

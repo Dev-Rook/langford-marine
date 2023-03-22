@@ -7,7 +7,6 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 
 // Component Imports Start
 import Navbar from "./Components/Navbar";
-import Fallback from "./Components/Fallback";
 import Footer from "./Components/Footer";
 // Component Imports End
 

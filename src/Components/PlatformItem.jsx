@@ -9,6 +9,7 @@ const PlatformItem = () => {
   const [data, setData] = useState(PlatformData);
   return (
     <div className={"Section"}>
+      <p className={"Title"}>Platforms</p>
       <div className={Styles.Content_Container}>
         {data?.map((value) => {
           return (

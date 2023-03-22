@@ -9,6 +9,7 @@ const Facilitiesitem = () => {
   const [data, setData] = useState(FacilitiesData);
   return (
     <div className={"Section"}>
+      <p className={"Title"}>Facilities</p>
       <div className={Styles.Content_Container}>
         {data?.map((value) => {
           return (
