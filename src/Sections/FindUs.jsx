@@ -27,7 +27,7 @@ const FindUs = () => {
         <li className={Styles.List_Item}>
           <span>Email</span>
           <a href={`https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDsMwzDnkHmVQwHkCKNZbWJdTCKpsTZvMBTlHSTdjMcfWtfKVwPQBmvblSbDjlNPDcBvSF`} target={"_blank"} rel={"noreferrer"}>
-            captain.cws@gmail.com
+            d&emarine@gmail.com
           </a>
         </li>
         <li className={Styles.List_Item}>
