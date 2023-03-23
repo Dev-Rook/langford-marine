@@ -18,11 +18,10 @@ const Index = () => {
   TabTitle("D&E | Home")
   return (
     <div className={"Page"}>
-      <Hero />
       <Introduction />
       <OfferSample />
       <ProjectsList />
-      <Facilitiesitem />
+      {/* <Facilitiesitem /> */}
       <Crew />
       <FindUs />
       <ContactForm />

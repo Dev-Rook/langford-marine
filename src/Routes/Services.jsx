@@ -10,7 +10,6 @@ const Services = () => {
   TabTitle("D&E | Services")
   return (
     <div className={"Page"}>
-        <Hero />
         <ServicesIntro />
         <ServiceItem />
     </div>

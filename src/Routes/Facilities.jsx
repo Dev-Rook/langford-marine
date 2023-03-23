@@ -9,8 +9,7 @@ const Facilities = () => {
   TabTitle("D&E | Facilities");
   return (
     <div className={"Page"}>
-      <Hero />
-      <Facilitiesitem />
+        <Facilitiesitem />
     </div>
   );
 };

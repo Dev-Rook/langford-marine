@@ -7,6 +7,7 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 
 // Component Imports Start
 import Navbar from "./Components/Navbar";
+import Hero from "./Sections/Hero";
 import Footer from "./Components/Footer";
 // Component Imports End
 
@@ -17,6 +18,7 @@ import Platforms from "./Routes/Platforms";
 import Facilities from "./Routes/Facilities";
 import HowWeDoIt from "./Routes/HowWeDoIt";
 import Contact from "./Routes/Contact";
+import Template from "./Routes/Projects/Template";
 import Error from "./Routes/Error";
 // Routes Import End
 
@@ -27,6 +29,7 @@ const App = () => {
     <div className={Styles.App}>
       <BrowserRouter>
         <Navbar />
+        <Hero />
           <Routes>
             <Route path={"/"} element={<Index />} />
             <Route path={"services"} element={<Services />} />
@@ -34,6 +37,7 @@ const App = () => {
             <Route path={"facilities"} element={<Facilities />} />
             <Route path={"how we do it"} element={<HowWeDoIt />} />
             <Route path={"contact"} element={<Contact />} />
+            <Route path={"template"} element={<Template />} />
             <Route path={"*"} element={<Error />} />
           </Routes>
         <Footer />

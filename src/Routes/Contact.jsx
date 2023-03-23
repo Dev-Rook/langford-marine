@@ -10,7 +10,6 @@ const Contact = () => {
   TabTitle("D&E | Contact")
   return (
     <div className={"Page"}>
-      <Hero />
       <FindUs />
       <ContactForm />
     </div>

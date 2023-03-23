@@ -8,7 +8,6 @@ import HwdoiItem from '../Components/HwdoiItem'
 const HowWeDoIt = () => {
   return (
     <div className={"Page"}>
-      <Hero />
       <HwdoiIntro />
       <HwdoiItem />
     </div>

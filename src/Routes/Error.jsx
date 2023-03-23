@@ -9,7 +9,6 @@ const Error = () => {
   TabTitle("D&E | 404")
   return (
     <div className={"Page"}>
-        <Hero />
         <ErrorLabel />
     </div>
   )
