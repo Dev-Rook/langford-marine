@@ -16,7 +16,11 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: rgba(36, 36, 36, 0.9);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+    var(--tw-backdrop-sepia);
 
   .Navbar {
     display: flex;
@@ -122,15 +126,22 @@
           height: fit-content;
           width: 200px;
 
-          background-color: rgba(39, 39, 42, .9);
+          background-color: rgba(39, 39, 42, 0.9);
           backdrop-filter: blur(5px);
           border-radius: 5px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
             rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
-          .Menu_NavLink {
-            color: white;
-            font-size: 18px;
+          li {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            .Menu_NavLink {
+              color: white;
+              font-size: 18px;
+              height: 100%;
+              width: 100%;
+            }
           }
         }
 
