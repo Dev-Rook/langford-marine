@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "link": "https://www.craftz.dog",
+        "link": "/template",
         "title": "This is the title",
         "year": 2023,
         "type": "Project Type",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "link": "https://www.craftz.dog",
+        "link": "/template",
         "title": "This is the title",
         "year": 2023,
         "type": "Project Type",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "link": "https://www.craftz.dog",
+        "link": "/template",
         "title": "This is the title",
         "year": 2023,
         "type": "Project Type",

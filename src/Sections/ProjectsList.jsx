@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import useScrollUp from "../Utilities/useScrollUp";
+
 import "../Styles/Global.scss";
 import Styles from "../Styles/Sections/Timeline.module.scss";
 
@@ -17,6 +20,7 @@ import ProjectData from "../Data/Projects.json";
 
 const ProjectsList = () => {
   const [data, setData] = useState(ProjectData);
+  const { scrollUp } = useScrollUp();
   return (
     <div className={"Section"}>
       <p className={"Title"}>Projects</p>
@@ -42,9 +46,9 @@ const ProjectsList = () => {
                   <span>
                     <p className={Styles.Year}>{value.year}</p>
                     <p className={Styles.Title}>{value.title}</p>
-                    <a href={value.link} target={"_blank"} re={"noreferrer"}>
+                    <Link to={value.link} onClick={scrollUp}>
                       <LaunchIcon sx={{ color: "red" }} />
-                    </a>
+                    </Link>
                   </span>
                   <p className={Styles.Description}>{value.description}</p>
                   <p className={Styles.Type}>{value.type}</p>
