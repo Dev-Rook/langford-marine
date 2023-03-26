@@ -15,7 +15,7 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "Routes/Index.jsx"),
+        main: resolve(__dirname, "Routes/Landing.jsx"),
         contact: resolve(__dirname, "Routes/Contact.jsx"),
         services: resolve(__dirname, "Routes/Services.jsx"),
         facilities: resolve(__dirname, "Routes/Facilities.jsx"),
