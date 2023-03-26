@@ -16,7 +16,7 @@ const Introduction = () => {
           cumque recusandae doloremque voluptas omnis eos nostrum fuga ea
           adipisci et aperiam voluptate illum deserunt enim itaque facere libero
           voluptatum voluptatibus mollitia nobis, modi incidunt veritatis qui.{" "}
-          <Link to={"/how we do it"} onClick={scrollUp} className={Styles.Link}>
+          <Link to={"hwdi"} onClick={scrollUp} className={Styles.Link}>
             How We Do it{" "}
             <StartIcon
               sx={{ color: "red", fontSize: 18 }}
