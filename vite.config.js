@@ -15,7 +15,7 @@ export default defineConfig({
         platforms: "Routes/Platforms.js",
         hwdi: "Routes/HowWeDoIt.js",
         about: "Routes/About.js",
-        template: "Routes/Projects/Template."
+        template: "Routes/Projects/Template.jsx"
         
       },
     },
