@@ -15,7 +15,6 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: "Routes/Landing",
         services: "Routes/Services"
       },
     },
