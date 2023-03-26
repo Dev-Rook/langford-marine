@@ -12,7 +12,7 @@ import Footer from "./Components/Footer";
 // Component Imports End
 
 // Routes Import Start
-import Landing from "./Routes/Landing";
+import Index from "./Routes/Index";
 import Services from "./Routes/Services";
 import Platforms from "./Routes/Platforms";
 import Facilities from "./Routes/Facilities";
@@ -31,7 +31,7 @@ const App = () => {
         <Navbar />
         <Hero />
           <Routes>
-            <Route path={"/"} element={<Landing />} />
+            <Route path={"/"} element={<Index />} />
             <Route path={"services"} element={<Services />} />
             <Route path={"platforms"} element={<Platforms />} />
             <Route path={"facilities"} element={<Facilities />} />
