@@ -14,7 +14,7 @@ import ContactForm from "../Components/ContactForm";
 // Section Imports End
 
 
-const Index = () => {
+const Landing = () => {
   TabTitle("D&E | Home")
   return (
     <div className={"Page"}>
@@ -29,4 +29,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Landing;
