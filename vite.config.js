@@ -9,7 +9,7 @@ const outDir = resolve(__dirname, "dist");
 // https://vitejs.dev/config/
 export default defineConfig({
   root,
-  plugins: [reactRefresh()],
+  plugins: [react()],
   build: {
     outDir,
     assetsDir: 'Assets',
