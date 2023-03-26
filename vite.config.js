@@ -8,13 +8,13 @@ export default defineConfig({
     outDir: "dist",
     rollupOptions: {
       input: {
-        main: "Routes/Index.js",
-        contact: "Routes/Contact.js",
-        services: "Routes/Services.js",
-        facilities: "Routes/Facilities.js",
-        platforms: "Routes/Platforms.js",
-        hwdi: "Routes/HowWeDoIt.js",
-        about: "Routes/About.js",
+        main: "Routes/Index.jsx",
+        contact: "Routes/Contact.jsx",
+        services: "Routes/Services.jsx",
+        facilities: "Routes/Facilities.jsx",
+        platforms: "Routes/Platforms.jsx",
+        hwdi: "Routes/HowWeDoIt.jsx",
+        about: "Routes/About.jsx",
         template: "Routes/Projects/Template.jsx"
         
       },
