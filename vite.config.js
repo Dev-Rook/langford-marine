@@ -12,11 +12,11 @@ export default defineConfig({
     outDir,
     rollupOptions: {
       input: {
-        main: resolve(root, "/Routes/Index.jsx"),
-        contact: resolve(root, "/Routes/Contact.jsx"),
-        services: resolve(root, "/Routes/Services.jsx"),
-        about: resolve(root, "/Routes/About.jsx"),
-        template: resolve(root, "/Routes/Template.jsx"),
+        main: resolve(root, "./Routes/Index.jsx"),
+        contact: resolve(root, "./Routes/Contact.jsx"),
+        services: resolve(root, "./Routes/Services.jsx"),
+        about: resolve(root, "./Routes/About.jsx"),
+        template: resolve(root, "./Routes/Template.jsx"),
       },
     },
   },
