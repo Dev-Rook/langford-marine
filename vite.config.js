@@ -16,7 +16,6 @@ export default defineConfig({
         hwdi: "src/Routes/HowWeDoIt.jsx",
         about: "src/Routes/About.jsx",
         template: "src/Routes/Projects/Template.jsx"
-        
       },
     },
   },
