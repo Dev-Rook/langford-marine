@@ -1,21 +1,22 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import {resolve} from "path"
+
+const root = resolve(__dirname, 'src')
+const outDir = resolve(__dirname, 'dist')
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: "dist",
+    outDir,
     rollupOptions: {
       input: {
-        main: "src/Routes/Index.jsx",
-        contact: "src/Routes/Contact.jsx",
-        services: "src/Routes/Services.jsx",
-        facilities: "src/Routes/Facilities.jsx",
-        platforms: "src/Routes/Platforms.jsx",
-        hwdi: "src/Routes/HowWeDoIt.jsx",
-        about: "src/Routes/About.jsx",
-        template: "src/Routes/Projects/Template.jsx"
+        main: resolve(root, "/Routes/Index.jsx"),
+        contact: resolve(root, "/Routes/Contact.jsx"),
+        services: resolve(root, "/Routes/Services.jsx"),
+        about: resolve(root, "/Routes/About.jsx"),
+        template: resolve(root, "/Routes/Template.jsx"),
       },
     },
   },
