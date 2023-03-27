@@ -12,7 +12,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir,
-    emptyOutDir: true,
+
     rollupOptions: {
       input: {
         main: resolve(root, "./Routes/Index.jsx"),
