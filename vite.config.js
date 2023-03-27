@@ -9,13 +9,13 @@ const outDir = resolve(__dirname, 'dist')
 // https://vitejs.dev/config/
 export default defineConfig({
   root,
-  plugins: [reactRefresh()],
+  plugins: [react()],
   build: {
     outDir,
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        home: resolve(root, "./Routes/Index.jsx"),
+        main: resolve(root, "./Routes/Index.jsx"),
         contact: resolve(root, "./Routes/Contact.jsx"),
         services: resolve(root, "./Routes/Services.jsx"),
         about: resolve(root, "./Routes/About.jsx"),
