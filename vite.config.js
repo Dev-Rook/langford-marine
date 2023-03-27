@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import reactRefresh from "@vitejs/plugin-react-refresh"
 import react from "@vitejs/plugin-react";
 import {resolve} from "path"
 
@@ -7,7 +8,7 @@ const outDir = resolve(__dirname, 'dist')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [reactRefresh()],
   build: {
     outDir,
     rollupOptions: {
