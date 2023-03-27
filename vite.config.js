@@ -16,7 +16,7 @@ export default defineConfig({
         contact: resolve(root, "./Routes/Contact.jsx"),
         services: resolve(root, "./Routes/Services.jsx"),
         about: resolve(root, "./Routes/About.jsx"),
-        template: resolve(root, "./Routes/Template.jsx"),
+        template: resolve(root, "./Routes/Projects/Template.jsx"),
       },
     },
   },
