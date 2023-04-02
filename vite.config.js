@@ -8,11 +8,11 @@ const outDir = resolve(__dirname, 'dist')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  root,
-  plugins: [react()],
+  plugins: [reactRefresh()],
   build: {
     outDir,
-
+    assetsDir: 'Assets',
+    emptyOutDir: true,
     rollupOptions: {
       input: {
         main: resolve(root, "./Routes/Index.jsx"),
