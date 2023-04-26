@@ -1,5 +1,5 @@
 import React from "react";
-import useScrollUp from "../Utilities/useScrollUp";
+import useScroll from "../Utilities/useScrollUp";
 import { Link } from "react-router-dom";
 import "../Styles/Global.scss";
 import Styles from "../Styles/Sections/Introudction.module.scss";
@@ -7,7 +7,7 @@ import Styles from "../Styles/Sections/Introudction.module.scss";
 import StartIcon from "@mui/icons-material/Start";
 
 const Introduction = () => {
-  const { scrollUp } = useScrollUp();
+  const { scrollUp } = useScroll();
   return (
     <div className={"Section"}>
       <div className={Styles.Content_Container}>

@@ -21,10 +21,9 @@ const Index = () => {
       <Introduction />
       <OfferSample />
       <ProjectsList />
-      {/* <Facilitiesitem /> */}
+      <Facilitiesitem />
       <Crew />
       <FindUs />
-      <ContactForm />
     </div>
   );
 };
